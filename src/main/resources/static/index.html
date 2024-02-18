@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinobillettbestilling</title>
+</head>
+<body>
+<h2>Kinobillettbestilling</h2>
+<form id="ticketForm">
+    <label for="name">Navn:</label>
+    <input type="text" id="name" required><br>
+
+    <label for="email">E-post:</label>
+    <input type="email" id="email" required><br>
+
+    <label for="phone">Telefonnummer:</label>
+    <input type="tel" id="phone" required><br>
+
+    <label for="quantity">Antall billetter:</label>
+    <input type="number" id="quantity" required><br>
+
+    <label for="movie">Film:</label>
+    <select id="movie">
+        <option value="DON 2">DON 2</option>
+        <option value="Mission Impossible">Mission Impossible</option>
+        <option value="Animal">Animal</option>
+    </select><br>
+
+    <button type="submit">Kjøp billett</button>
+</form>
+<button id="deleteAll">Slett alle billettene</button>
+<h3>Alle billetter:</h3>
+<ul id="ticketList"></ul>
+
+<script src="main.js"></script>
+</body>
+</html>
